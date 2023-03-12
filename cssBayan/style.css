@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.accordion-item {
+    
+    cursor: pointer;
+}
+.meme_input {
+    appearance: none;
+}
+.meme_1 {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    transition: backgraund .2s ease-out;
+}
+.accordion {
+    cursor: pointer;
+}
+.accordion-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+
+.font-label {
+    font-family: cursive;
+    font-weight: 600;
+    font-size: x-large;
+}
+.font-h1 {
+    font-family: cursive;
+    font-weight: 600;
+    font-size: xxx-large;
+}
+.meme_img {
+    display: none;
+    /*display: flex;
+    /* align-items: center; */
+    /*text-align: center;*/
+    
+}
+.mem {
+    transition: all 5s ease-out;
+}
+.accordion-title:hover + .mem {
+    
+    display: flex;
+    align-items: center; 
+    text-align: center;
+}
+.mem-img {
+    width: 50%;
+}
+
