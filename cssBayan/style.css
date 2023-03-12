@@ -18,13 +18,15 @@
 }
 .accordion {
     cursor: pointer;
+    width: 50%;
 }
 .accordion-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
+    border-top: 1.5px solid rgb(41, 69, 105);
+    border-bottom: 1.5px solid rgb(41, 69, 105);
+    padding: 1.5%;
 }
 
 
@@ -49,7 +51,6 @@
     transition: all 5s ease-out;
 }
 .accordion-title:hover + .mem {
-    
     display: flex;
     align-items: center; 
     text-align: center;
@@ -57,4 +58,17 @@
 .mem-img {
     width: 50%;
 }
+.min, .plus {
+    display: none;
+}
 
+.accordion:hover:after,
+.accordion input:checked + label:hover:after{
+ content: '';
+ position:fixed;
+ width: 24px;
+ height: 24px;
+ right: 13px;
+ top: 7px;
+ background: transparent url(../cssBayan/img/min.svg) no-repeat center center;
+}
