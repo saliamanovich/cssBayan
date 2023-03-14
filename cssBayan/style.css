@@ -87,4 +87,9 @@
     align-items: center; 
     text-align: center;
 }
+.block-checked {
+    display: flex;
+    align-items: center; 
+    text-align: center;
+}
 
